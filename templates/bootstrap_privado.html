@@ -1,0 +1,21 @@
+{% extends "bootstrap.html" %}
+{% block privado %}
+
+	<div id="headerprivado" class="container">Main feature of the app
+	</div>
+
+	<div class="contenedor">
+		<aside id="menuprivado">
+			{% block menuprivado %}{% endblock %}
+		</aside>
+
+
+		<div id="areatrabajo" class="col-lg-9 text-center">
+			{% block contenido %}{% endblock %}
+			{% block discusiones %}{% endblock %}
+
+		</div>
+
+	</div>
+
+{% endblock %}

@@ -1,0 +1,196 @@
+@font-face {
+	font-family: "abacoicons";
+	src: url("abacoicons.eot");
+	src: url("abacoicons.eot#iefix") format("embedded-opentype"),
+	url("abacoicons.woff") format("woff"),
+	url("abacoicons.ttf") format("truetype"),
+	url("abacoicons.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+[class^="abacoicons-"]:before, [class*=" abacoicons-"]:before,
+[class^="abacoicons-"]:after, [class*=" abacoicons-"]:after {   
+	font-family: abacoicons,normal;
+
+    /*font-size: 20px;
+	font-style: normal;
+	margin-left: 20px;*/
+	font-size: 1.6em;
+	
+	
+	
+}
+
+[class^="abacoicons-"]:before, [class*=" abacoicons-"]:hover{
+	color:green;
+}
+.abacoicons-space:before {content: "\20";}
+.abacoicons-monitor:before {content: "\21";/* ! */}
+.abacoicons-pc:before {content: "\22";/* " */}
+.abacoicons-engrane:before {content: "\23"; /* # */}
+.abacoicons-herramienta:before {content: "\24"; /* $ */}
+.abacoicons-borrador:before {content: "\25"; /* % */}
+.abacoicons-tijera:before {content: "\26"; /* & */}
+.abacoicons-dedoindice:before {content: "\27"; /* ' */}
+.abacoicons-labios:before {content: "\28"; /* ( */}
+.abacoicons-oido:before {content: "\29"; /* ) */}
+.abacoicons-nariz:before {content: "\2a"; /* * */}
+.abacoicons-mano:before {content: "\2b"; /* + */}
+.abacoicons-pie:before {content: "\2c"; /* , */}
+.abacoicons-libro:before {content: "\2d"; /* - */}
+.abacoicons-admiracion1:before {content: "\2e"; /* . */}
+.abacoicons-tijera2:before {content: "\2f"; /* / */}
+.abacoicons-cb:before {content: "\30"; /* 0 */}
+.abacoicons-odometro:before {content: "\31"; /* 1 */}
+.abacoicons-despertador:before {content: "\32"; /* 2 */}
+.abacoicons-reloj:before {content: "\33"; /* 3 */}
+.abacoicons-camara:before {content: "\34"; /* 4 */}
+.abacoicons-foco:before {content: "\35"; /* 5 */}
+.abacoicons-dona:before {content: "\36"; /* 6 */}
+.abacoicons-escudo:before {content: "\37"; /* 7 */}
+.abacoicons-globotexto:before {content: "\38"; /* 8 */}
+.abacoicons-sello:before {content: "\39"; /* 9 */}
+.abacoicons-archivo:before {content: "\3a"; /* : */}
+.abacoicons-nube:before {content: "\3b"; /* ; */}
+.abacoicons-sol:before {content: "\3c"; /* < */}
+.abacoicons-nube2:before {content: "\3d"; /* = */}
+.abacoicons-luna:before {content: "\3e"; /* > */}
+.abacoicons-rayo:before {content: "\3f"; /* ? */}
+.abacoicons-usb:before {content: "\40";}
+.abacoicons-bolsacompras:before {content: "\41";} /* A */
+.abacoicons-canastacompras:before {content: "\42";} /*B*/
+.abacoicons-credito:before {content: "\43";}/*C*/
+.abacoicons-pegatina:before {content: "\44";}/*D*/
+.abacoicons-descuento:before {content: "\45";}/*E*/
+.abacoicons-caja:before {content: "\46";}/*F*/
+.abacoicons-efectivo:before {content: "\47";}/*G*/
+.abacoicons-candado:before {content: "\48";}/*H*/
+.abacoicons-etiqueta:before {content: "\49";}/*I*/
+.abacoicons-cheque:before {content: "\4a";}/*J*/
+.abacoicons-ok:before {content: "\4b";}/*K*/
+.abacoicons-mal:before {content: "\4c";}/*L*/
+.abacoicons-interrogacion:before {content: "\4d";}/*M*/
+.abacoicons-exclamacion:before {content: "\4e";}/*N*/
+.abacoicons-lupa:before {content: "\4f";}/*O*/
+.abacoicons-llave:before {content: "\50";}/*P*/
+.abacoicons-audifonos:before {content: "\51";}/*Q*/
+.abacoicons-camioncito:before {content: "\52";}/*R*/
+.abacoicons-calculadora:before {content: "\53";}/*S*/
+.abacoicons-registradora:before {content: "\54";}/*T*/
+.abacoicons-tarea:before {content: "\55";}/*U*/
+.abacoicons-grafica1:before {content: "\56";}/*V*/
+.abacoicons-grafica2:before {content: "\57";}/*W*/
+.abacoicons-dialogos:before {content: "\58";}/*X*/
+.abacoicons-muchacho:before {content: "\59";}/*Y*/
+.abacoicons-muchacha:before {content: "\5a";}/*Z*/
+.abacoicons-accion:before {content: "\5b";}
+.abacoicons-acuarelas:before {content: "\5c";}
+.abacoicons-notas:before {content: "\5d";}
+.abacoicons-camaraweb:before {content: "\5e";}
+.abacoicons-clip:before {content: "\5f";}
+.abacoicons-pincel:before {content: "\60";}
+.abacoicons-calendario:before {content: "\61";}/*a*/
+.abacoicons-carpeta:before {content: "\62";}/*b*/
+.abacoicons-compras1:before {content: "\63";}/*c*/
+.abacoicons-compras2:before {content: "\64";}/*d*/
+.abacoicons-email:before {content: "\65";}/*e*/
+.abacoicons-sobre:before {content: "\66";}/*f*/
+.abacoicons-telefono:before {content: "\67";}/*g*/
+.abacoicons-cel1:before {content: "\68";}/*h*/
+.abacoicons-cel2:before {content: "\69";}/*i*/
+.abacoicons-regalo:before {content: "\6a";}/*j*/
+.abacoicons-mundo:before {content: "\6b";}/*k*/
+.abacoicons-aqui:before {content: "\6c";}/*l*/
+.abacoicons-chincheta:before {content: "\6d";}/*m*/
+.abacoicons-impresora1:before {content: "\6e";}/*n*/
+.abacoicons-fax:before {content: "\6f";}/*o*/
+.abacoicons-basurero:before {content: "\70";}/*p*/
+.abacoicons-descarga:before {content: "\71";}/*q*/
+.abacoicons-subir:before {content: "\72";}/*r*/
+.abacoicons-nube3:before {content: "\73";}/*s*/
+.abacoicons-chekbox:before {content: "\74";}/*t*/
+.abacoicons-reciclar:before {content: "\75";}/*u*/
+.abacoicons-diskete:before {content: "\76";}/*v*/
+.abacoicons-dolar:before {content: "\77";}/*w*/
+.abacoicons-euro:before {content: "\78";}/*x*/
+.abacoicons-yens:before {content: "\79";}/*y*/
+.abacoicons-paypal:before {content: "\7a";}/*z*/
+.abacoicons-embudo:before {content: "\7b";}
+.abacoicons-gotero:before {content: "\7c";}
+.abacoicons-relojarena:before {content: "\7d";}
+.abacoicons-lapiz:before {content: "\7e";}
+.abacoicons-flama:before {content: "\a1";}
+.abacoicons-virus:before {content: "\a2";}
+.abacoicons-banderin:before {content: "\a3";}
+.abacoicons-corazon:before {content: "\a4";}
+.abacoicons-estrella:before {content: "\a5";}
+.abacoicons-tierra:before {content: "\a6";}
+.abacoicons-imagen:before {content: "\a7";}
+.abacoicons-binoculares:before {content: "\a8";}
+.abacoicons-dados:before {content: "\a9";}
+.abacoicons-altavoz:before {content: "\aa";}
+.abacoicons-pelicula:before {content: "\ab";}
+.abacoicons-facebook:before {content: "\ac";}
+.abacoicons-in:before {content: "\ae";}
+.abacoicons-twitter:before {content: "\af";}
+.abacoicons-degree:before {content: "\b0";}
+.abacoicons-google:before {content: "\b1";}
+.abacoicons-youtube:before {content: "\b2";}
+.abacoicons-vine:before {content: "\b3";}
+.abacoicons-acute:before {content: "\b4";}
+.abacoicons-uni00B5:before {content: "\b5";}
+.abacoicons-yahoo:before {content: "\b6";}
+.abacoicons-myspace:before {content: "\b7";}
+.abacoicons-compartir:before {content: "\b8";}
+.abacoicons-enviar:before {content: "\b9";}
+.abacoicons-seguir:before {content: "\ba";}
+.abacoicons-curva1:before {content: "\bb";}
+.abacoicons-curva2:before {content: "\bc";}
+.abacoicons-circulo:before {content: "\bd";}
+.abacoicons-cubos:before {content: "\be";}
+.abacoicons-correcto:before {content: "\bf";}
+.abacoicons-incorrecto:before {content: "\c0";}
+.abacoicons-campana:before {content: "\c1";}
+.abacoicons-cono:before {content: "\c2";}
+.abacoicons-bocina:before {content: "\c3";}
+.abacoicons-calendario2:before {content: "\c4";}
+.abacoicons-agenda {content: "\c5";}
+.abacoicons-llamada:before {content: "\c6";}
+.abacoicons-wiriless:before {content: "\c7";}
+.abacoicons-microfono:before {content: "\c8";}
+.abacoicons-ecualizador:before {content: "\c9";}
+.abacoicons-parabolica:before {content: "\ca";}
+.abacoicons-sombrilla:before {content: "\cb";}
+.abacoicons-cinta:before {content: "\cc";}
+.abacoicons-rompecabeza:before {content: "\cd";}
+.abacoicons-pausa:before {content: "\ce";}
+.abacoicons-play:before {content: "\cf";}
+.abacoicons-stop:before{content: "\d0";}
+.abacoicons-final:before{content: "\d1";}
+.abacoicons-encender:before{content: "\d2";}
+.abacoicons-escoba:before{content: "\d3";}
+.abacoicons-periodico:before {content: "\d4";}
+.abacoicons-controlgame:before{content: "\d5";}
+.abacoicons-ab:before{content: "\d6";}
+.abacoicons-varita:before{content: "\d7";}
+.abacoicons-clavija:before{content: "\d8";}
+.abacoicons-herradura:before{content: "\d9";}
+.abacoicons-seleccion1:before{	content: "\da";}
+.abacoicons-seleccion2:before {content: "\db";}
+.abacoicons-seleccion3:before {content: "\dc";}
+.abacoicons-rectangulo:before{content: "\dd";}
+.abacoicons-switch:before{content: "\de";}
+.abacoicons-volumen:before {content: "\df";}
+.abacoicons-palomita:before{content: "\e0";}
+.abacoicons-dardo:before{content: "\e1";}
+.abacoicons-rosa:before {content: "\e2";}
+.abacoicons-aspirina:before{content: "\e3";}
+.abacoicons-inyeccion:before {content: "\e4";}
+.abacoicons-estetoscopio:before{content: "\e5";}
+.abacoicons-quimica:before{content: "\e6";}
+.abacoicons-casco:before{content: "\e7";}
+.abacoicons-puntero:before{content: "\2018";}
+.abacoicons-ojo:before{content: "\2019";}
+.abacoicons-teclado:before{content: "\201c";}
+.abacoicons-tablet:before{content: "\201d";}
+.abacoicons-musica:before{content: "\20ac";}

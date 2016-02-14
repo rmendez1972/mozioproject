@@ -1,0 +1,44 @@
+{% extends "homepage.html" %}
+{% block show %}
+<div id="contenedor" class="container contenido">
+
+
+	<div class="panel panel-default" style="width:50%; margin:0 auto;border:2px solid green;">
+		<div class="panel-heading" style="border-bottom:1px solid green;text-aling:center;"><h4>{{titulo_formulario}}</h4></div>
+		<div class="panel-body">
+			<form action="/catalogos/departamentos/crear" method="post" rol="form">
+			{% csrf_token %}
+			{{ form.non_field_errors }}
+			{% for field in form %}
+				<div class="form-group">
+
+			    	<div class="col-sm-12">
+
+						{{field.label_tag}} <br>
+					</div>
+					<div class="col-sm-12">
+						{{field}}
+
+						<div class="text-danger">{{field.errors}}</div>
+					</div>
+				</div>
+			{% endfor %}
+
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<div class="form-group">
+            	<div class="col-sm-6">
+					<input type="submit" class="btn btn-primary" value="Grabar">
+					<a href="{% url 'catalogos_departamentos_listar' %}"><button class="btn btn-default" type="button">Cancelar</button> </a>
+				</div>
+			</div>
+		</form>
+
+		</div>
+	</div>
+</div>
+{%endblock%}

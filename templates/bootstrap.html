@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="ens">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Mozio's Shuttle Companies Project </title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="/static/css/mozio.css" rel="stylesheet">
+
+    <!-- treegrid css -->
+    <link href="/static/css/jquery.treegrid.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="/static/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="/static/fonts/mozioproject/abacoicons.css" rel="stylesheet" type="text/css">
+    <link href="/static/fonts/mozioproject/abacologos.css" rel="stylesheet" type="text/css">
+
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <div style="float:left;position:relative;margin-top:0px">
+                        <!--<span class="logogrande abacologos-09"></span>
+                    <!--<img src="/static/img/abaco.png" width="100px" height="100px">-->
+                    </div>
+                    <div style="float:left;font-size:36px;text-shadow: 2px 4px 3px rgba(0,0,0,0.4);">
+                        Mozio
+                    </div>
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+
+                        <li>
+                            <a id="modelo0" class="page-scroll" href="#modelo">How the app work</a>
+                        </li>
+
+
+                        <li>
+                            <a id="profesores0" class="page-scroll" href="#developers">Developer Team</a>
+                        </li>
+                        <li>
+                            <a id="testimoniales0" class="page-scroll" href="#testimoniales">Testimonials</a>
+                        </li>
+
+                        {% if user.is_authenticated %}
+
+                            <li>
+                                <a id="regitrate0" class="page-scroll" href="#providers">Shuttle Providers</a>
+                            </li>
+                            <li id="entrar0">
+                                <a  class="page-scroll" href="/logout">Logout</a>
+                            </li>
+                        {% else %}
+                            <li id="entrar0">
+                                <a  class="page-scroll" href="/login">Login</a>
+                            </li>
+                        {% endif %}
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-lead-in"></div>
+                <div class="intro-heading"><small></small></div>
+                <a href="#modelo" class="page-scroll btn btn-xl">Discover the app</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Cómo funciona Section -->
+    <section id="modelo">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">¿How works the app <span class="abaco">Mozio</span>?</h2>
+                    <h3 class="section-subheading text-muted">Then I will explain how my application works</h3>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-6">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa abacoicons-camaraweb fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Videos provided by shuttle Companies</h4>
+                    <p class="text-muted">This is a bonus feature. It was not requested by you, but it became me well add. This feature has REST endpoint to create, edit, list and delete videos provided for the shuttle owners.For example for marketing campaigns. </p>
+                </div>
+
+                <div class="col-md-6">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa abacoicons-tarea fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Get data from shuttle providers</h4>
+                    <p class="text-muted">This is the principal feature. I made REST endpoint for this. Through front-end features like lists and forms collect data such as name, email, phone, language and currency. The endpoints are reached at this time via AJAX requests with Json responses, but may be too full REST API to be consumed by any front-end app like a movil app. The app has login and CSRF validation. The user and password are user: rmendez1972 and password: veronica1972. After login Click on "shuttle providers" menu option to go to the bottom and use this feature. I use mysql like database, i made a mozio.sql file backup for you and put the file in the database directory to made a restore of the db. I use user:root and password:admin like mysql administrator. </p>
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </section>
+
+
+
+
+
+
+
+    <!-- Asesores Section -->
+    <section id="developers">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Development Team</h2>
+                    <h3 class="section-subheading text-muted">This time i made the front-end and the banck-end of the <span class="abaco">Mozio</span> app.</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="timeline">
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="/static/img/asesores/Mexico.png" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>Ing. Rafael Méndez Asencio</h4>
+                                    <h4 class="subheading">Software Engineer.</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Loved of the front-end. Angular.js, React.js, bootstrap, css preprocers (stylus,less), jquery, Polymer, bower, grunt, npm, etc.  </p>
+                                </div>
+                                <div class="team-member">
+
+                                    <ul class="list-inline social-buttons">
+                                        <li><a href="#"><i class="fa fa-twitter"></i></a>@rmendez1972</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="/static/img/asesores/Mexico.png" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>Ing. Rafael Méndez Asencio</h4>
+                                    <h4 class="subheading">Software Engineer.</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Loved of the back-end. Java EE, spring framework, node.js, express framework, sails.js framework, python and Django framework, php and laravel framework, and hybrid movile development in Ionic frame work.</p>
+                                </div>
+                                <div class="team-member">
+
+                                    <ul class="list-inline social-buttons">
+                                        <li><a href="https://twitter.com/rmendez1972"><i class="fa fa-twitter"></i></a>@rmendez1972</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+
+
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimoniales Section -->
+    <section id="testimoniales" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Testimonials</h2>
+                    <h3 class="section-subheading text-muted">Be part of the<span class="abaco">Mozio</span> community!.</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="/static/img/testimoniales/1.jpg" class="img-responsive img-circle" alt="">
+                        <h4>Kay Garland</h4>
+                        <p class="text-muted">"Thanks <span class="abaco">Mozio</span>, i love the app"</p>
+                        <ul class="list-inline social-buttons">
+                            <li><a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="/static/img/testimoniales/2.jpg" class="img-responsive img-circle" alt="">
+                        <h4>Larry Parker</h4>
+                        <p class="text-muted">"I love <span class="abaco">Mozio</span></p>
+                        <ul class="list-inline social-buttons">
+                            <li><a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="/static/img/testimoniales/3.jpg" class="img-responsive img-circle" alt="">
+                        <h4>Diana Pertersen</h4>
+                        <p class="text-muted">"I love <stron class="abaco">Mozio</stron></p>
+                        <ul class="list-inline social-buttons">
+                            <li><a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <p class="large text-muted">All they used Mozio app in theirs business travel.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Patrocinadores abaco -->
+    <aside class="clients">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h3 class="section-subheading text-muted">They love <span class="abaco">Mozio</span>!.</h3>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <a href="#">
+                        <img src="/static/img/logos/envato.jpg" class="img-responsive img-centered" alt="">
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <a href="#">
+                        <img src="/static/img/logos/designmodo.jpg" class="img-responsive img-centered" alt="">
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <a href="#">
+                        <img src="/static/img/logos/themeforest.jpg" class="img-responsive img-centered" alt="">
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <a href="#">
+                        <img src="/static/img/logos/creative-market.jpg" class="img-responsive img-centered" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+
+
+    <!-- Sección de registro -->
+    <section id="providers">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Shuttle Providers</h2>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="container">
+                        {% block privado %}{% endblock %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--bloque para inicio de sesion controlado por django-->
+    {% block inicio_sesion %}{% endblock %}
+
+
+
+    <!--bloque privado de la plataforma para usuarios de pago (interactivo)-->
+
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">Copyright&copy;    <span class="abaco" style="color:white">Mozio</span>    2016</span>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+                        <li><a href="#"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline quicklinks">
+                        <li><a href="#">Privacy policies</a>
+                        </li>
+                        <li><a href="#">Terms and conditions</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Portfolio Modals -->
+    <!-- Use the modals below to showcase details about your portfolio projects! -->
+
+    <!-- Portfolio Modal 1 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Project Name</h2>
+                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                            <img class="img-responsive" src="/static/img/portfolio/roundicons-free.png" alt="">
+                            <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                            <p>
+                                <strong>Want these icons in this portfolio item sample?</strong>You can download 60 of them for free, courtesy of <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">RoundIcons.com</a>, or you can purchase the 1500 icon set <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">here</a>.</p>
+                            <ul class="list-inline">
+                                <li>Date: July 2014</li>
+                                <li>Client: Round Icons</li>
+                                <li>Category: Graphic Design</li>
+                            </ul>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 2 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Project Heading</h2>
+                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                            <img class="img-responsive img-centered" src="/static/img/portfolio/startup-framework-preview.png" alt="">
+                            <p><a href="http://designmodo.com/startup/?u=787">Startup Framework</a> is a website builder for professionals. Startup Framework contains components and complex blocks (PSD+HTML Bootstrap themes and templates) which can easily be integrated into almost any design. All of these components are made in the same style, and can easily be integrated into projects, allowing you to create hundreds of solutions for your future projects.</p>
+                            <p>You can preview Startup Framework <a href="http://designmodo.com/startup/?u=787">here</a>.</p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 3 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Project Name</h2>
+                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                            <img class="img-responsive img-centered" src="/static/img/portfolio/treehouse-preview.png" alt="">
+                            <p>Treehouse is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. This is bright and spacious design perfect for people or startup companies looking to showcase their apps or other projects.</p>
+                            <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/treehouse-free-psd-web-template/">FreebiesXpress.com</a>.</p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 4 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Project Name</h2>
+                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                            <img class="img-responsive img-centered" src="/static/img/portfolio/golden-preview.png" alt="">
+                            <p>Start Bootstrap's Agency theme is based on Golden, a free PSD website template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Golden is a modern and clean one page web template that was made exclusively for Best PSD Freebies. This template has a great portfolio, timeline, and meet your team sections that can be easily modified to fit your needs.</p>
+                            <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/golden-free-one-page-web-template/">FreebiesXpress.com</a>.</p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 5 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Project Name</h2>
+                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                            <img class="img-responsive img-centered" src="/static/img/portfolio/escape-preview.png" alt="">
+                            <p>Escape is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Escape is a one page web template that was designed with agencies in mind. This template is ideal for those looking for a simple one page solution to describe your business and offer your services.</p>
+                            <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/escape-one-page-psd-web-template/">FreebiesXpress.com</a>.</p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 6 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Project Name</h2>
+                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                            <img class="img-responsive img-centered" src="/static/img/portfolio/dreams-preview.png" alt="">
+                            <p>Dreams is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Dreams is a modern one page web template designed for almost any purpose. It’s a beautiful template that’s designed with the Bootstrap framework in mind.</p>
+                            <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/dreams-free-one-page-web-template/">FreebiesXpress.com</a>.</p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Planes de Pago Modal 1 -->
+    <div class="portfolio-modal modal fade" id="planesModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Plan Gratuito</h2>
+                            <p class="item-intro text-muted">Acceso Limitado.</p>
+                            <img class="img-responsive" src="/static/img/planes/plan1_p.jpg" alt="">
+                            <p>En la Plataroma <strong class="abaco">Ábaco</strong>, tenemos la firme convicción de convertirnos en la mejor plataforma de asesorías particulares online de Matemáticas y Física para los Niveles Educativos de Secundaria y Bachillerato o Preparatoria. Por esta razón queremos crear una gran comunidad de asesores particulares de estas materias y sobre todo de estudiantes que gracias a la plataforma online <strong class="abaco">Ábaco</strong> logren regularizar sus estudios. Por eso mismo queremos que nos conozcas, y ponemos a tu disposición la sección de material gratuito a través de la opción del menú ASESORIAS y de la sección de preguntas frecuentes de la plataforma.</p>
+                            <p>
+                                <strong>Te gustó el material gratuito que tenemos para ti?</strong>Entonces te invitamos a contratar alguno de los planes de pago que tenemos para ti. Contratar un plan de pago es muy fácil, solo deberás llenar el siguiente formulario de pago <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc"><strong class="abaco">contrataciones</strong></a>.</p>
+                            <ul class="list-inline">
+                                <li>Vigencia: 2015</li>
+                                <li>email: ventas-abaco@gmail.com</li>
+                                <li>Tels: 983-83 7-25-74 y 983-14 42-741</li>
+                            </ul>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Cerrar Plan</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Planes de pago Modal 2 -->
+    <div class="portfolio-modal modal fade" id="planesModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Plan Mensual</h2>
+                            <p class="item-intro text-muted">Acceso Ilimitado todo un mes.</p>
+                            <img class="img-responsive img-centered" src="/static/img/planes/plan2_p.jpg" alt="">
+                            <p>En la Plataroma <strong class="abaco">Ábaco</strong>, tenemos la firme convicción de convertirnos en la mejor plataforma de asesorías particulares online de Matemáticas y Física para los Niveles Educativos de Secundaria y Bachillerato o Preparatoria. Por esta razón queremos crear una gran comunidad de asesores particulares de estas materias y sobre todo de estudiantes que gracias a la plataforma online <strong class="abaco">Ábaco</strong> logren regularizar sus estudios. Al contratar el Plan Mensual, tendrás acceso a todas la herramientas multimedia que la plataforma tiene para tí, como son Videos de asesorías grababadas en formato de alta calidad en los que veras la resolución de ejercicios o problemas siguiendo medotologías pedagógicas divertidas y sencillas.También podrás resolver ejercicios interactivos que la plataforma tiene a tu disposición para que puedas ir auto-evaluando tu aprendizaje. Podrás cosultar ejercicios resueltos de puño y letra de los asesores debidamente explicados. Podrás acceder a clases presenciales o en vivo (online) a través de video conferencias (vía Skype o HagOuts de Google) debidamente programadas durante todas las semanas, en la que podrás interactuar y consultar a los asesores particulares de la plataforma <strong class="abaco">Ábaco</strong> de nuestra comunidad. Tendras una sección de preguntas y respuestas, en las que podrás consultar dudas particulares sobre un tema o ejercicio en específico. Podrás entrar al chat <strong class="abaco">Pregúntale a tu asesor</strong> durante la emisión de las clases online o presenciales y mediante esta herramienta podrás consultar en tiempo real cualquier duda, sobre el ejercicio que el asesor este desarrollando</p>
+                            <p>Te invitamos a contratar alguno de los planes de pago que tenemos para ti. Contratar un plan de pago es muy fácil y económico, solo deberás llenar el siguiente formulario de pago <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc"><strong class="abaco">contrataciones</strong></a>.</p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Cerrar Plan</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Planes Modal 3 -->
+    <div class="portfolio-modal modal fade" id="planesModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Plan Semestral</h2>
+                            <p class="item-intro text-muted">Acceso Ilimitado durante 6 meses.</p>
+                            <img class="img-responsive img-centered" src="/static/img/planes/plan3_p.jpg" alt="">
+                            <p>En la Plataroma <strong class="abaco">Ábaco</strong>, tenemos la firme convicción de convertirnos en la mejor plataforma de asesorías particulares online de Matemáticas y Física para los Niveles Educativos de Secundaria y Bachillerato o Preparatoria. Por esta razón queremos crear una gran comunidad de asesores particulares de estas materias y sobre todo de estudiantes que gracias a la plataforma online <strong class="abaco">Ábaco</strong> logren regularizar sus estudios. Al contratar el Plan Mensual, tendrás acceso a todas la herramientas multimedia que la plataforma tiene para tí, como son Videos de asesorías grababadas en formato de alta calidad en los que veras la resolución de ejercicios o problemas siguiendo medotologías pedagógicas divertidas y sencillas.También podrás resolver ejercicios interactivos que la plataforma tiene a tu disposición para que puedas ir auto-evaluando tu aprendizaje. Podrás cosultar ejercicios resueltos de puño y letra de los asesores debidamente explicados. Podrás acceder a clases presenciales o en vivo (online) a través de video conferencias (vía Skype o HagOuts de Google) debidamente programadas durante todas las semanas, en la que podrás interactuar y consultar a los asesores particulares de la plataforma <strong class="abaco">Ábaco</strong> de nuestra comunidad. Tendras una sección de preguntas y respuestas, en las que podrás consultar dudas particulares sobre un tema o ejercicio en específico. Podrás entrar al chat <strong class="abaco">Pregúntale a tu asesor</strong> durante la emisión de las clases online o presenciales y mediante esta herramienta podrás consultar en tiempo real cualquier duda, sobre el ejercicio que el asesor este desarrollando.</p>
+                            <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/treehouse-free-psd-web-template/">FreebiesXpress.com</a>.</p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- jQuery -->
+    <script src="/static/js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="/static/js/bootstrap.min.js"></script>
+
+    <!-- jQuery treegrid-->
+    <script src="/static/js/jquery.treegrid.bootstrap3.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="/static/js/classie.js"></script>
+    <script src="/static/js/cbpAnimatedHeader.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="/static/js/jqBootstrapValidation.js"></script>
+    <script src="/static/js/contact_me.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="/static/js/agency.js"></script>
+    <script src="/static/js/main.js"></script>
+
+</body>
+
+</html>

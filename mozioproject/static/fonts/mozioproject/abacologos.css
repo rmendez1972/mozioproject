@@ -1,0 +1,133 @@
+@font-face {
+  font-family: "erasdust";
+  /*src: url("/static/fonts/eraser/eraser.eot");
+  src: url("/static/fonts/eraser/eraser.eot#iefix") format("embedded-opentype"),
+  url("/static/fonts/eraser/eraser.woff") format("woff"),
+  url("/static/fonts/eraser/erasdust.ttf") format("truetype"),
+  url("/static/fonts/eraser/eraser.svg") format("svg");*/
+  src: url("/static/fonts/eraser/erasdust.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+
+
+@font-face {
+  font-family: "abacologos";
+  src: url("abacologos.eot");
+  src: url("abacologos.eot#iefix") format("embedded-opentype"), url("abacologos.woff") format("woff"), url("abacologos.ttf") format("truetype"), url("abacologos.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="abacologos-"]:before,
+[class*=" abacologos-"]:before,
+[class^="abacologos-"]:after,
+[class*=" abacologos-"]:after {
+  font-family: abacologos;
+  /*font-size: 50px;*/
+  font-style: normal;
+  /*margin-left: 20px;*/
+  text-shadow: 4px 4px 3px rgba(0, 0, 0, 0.4);
+}
+.logogrande {
+  font-family: abacologos;
+  font-size: 68px;
+}
+.logomediano {
+  font-family: abacologos;
+  font-size: 50px;
+}
+.logochico {
+  font-family: abacologos;
+  font-size: 25px;
+}
+.logochiquito {
+  font-family: abacologos;
+  font-size: 13px;
+}
+.abacologos-01:before {
+  content: "\e000";
+}
+.abacologos-02:before {
+  content: "\e001";
+}
+.abacologos-03:before {
+  content: "\e002";
+}
+.abacologos-04:before {
+  content: "\e003";
+}
+.abacologos-05:before {
+  content: "\e004";
+}
+.abacologos-06:before {
+  content: "\e005";
+}
+.abacologos-07:before {
+  content: "\e006";
+}
+.abacologos-08:before {
+  content: "\e007";
+}
+.abacologos-09:before {
+  content: "\e008";
+}
+.abacologos-10:before {
+  content: "\e009";
+}
+.abacologos-11:before {
+  content: "\e00a";
+}
+.abacologos-12:before {
+  content: "\e00b";
+}
+.abacologos-13:before {
+  content: "\e00c";
+}
+.abacologos-14:before {
+  content: "\e00d";
+}
+.abacologos-15:before {
+  content: "\e00e";
+}
+.abacologos-16:before {
+  content: "\e00f";
+}
+.abacologos-17:before {
+  content: "\e010";
+}
+.abacologos-18:before {
+  content: "\e011";
+}
+.abacologos-19:before {
+  content: "\e012";
+}
+.abacologos-20:before {
+  content: "\e013";
+}
+.abacologos-21:before {
+  content: "\e014";
+}
+.abacologos-22:before {
+  content: "\e015";
+}
+.abacologos-23:before {
+  content: "\e016";
+}
+.abacologos-24:before {
+  content: "\e017";
+}
+.abacologos-25:before {
+  content: "\e018";
+}
+.abacologos-26:before {
+  content: "\e019";
+}
+.abacologos-27:before {
+  content: "\e01a";
+}
+.abacologos-28:before {
+  content: "\e01b";
+}

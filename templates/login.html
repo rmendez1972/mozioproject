@@ -1,0 +1,40 @@
+{% extends "bootstrap.html" %}
+{% block inicio_sesion %}
+
+<div class="entrar">
+	<div class="panel-body">
+
+		{% if message %}
+			<strong><h5>{{message}}</h5></strong>
+		{% endif %}
+
+		<form action="/login/" method="post" class="form-inline" rol="form">
+			{% csrf_token %}
+			{{ form.non_field_errors }}
+			<div class="form-group">
+
+
+			    <label  for="{{ form.username.id_for_label }}">User:</label>
+			    {{ form.username }}
+			    <h5>{{ form.username.errors }}</h5>
+
+			</div>
+
+			<div class="form-group">
+
+
+			    <label  for="{{ form.password.id_for_label }}">Password:</label>
+				{{ form.password }}
+			    <h5>{{ form.password.errors }}</h5>
+
+			</div>
+
+
+			<div class="form-group">
+	            <input type="submit" class="btn btn-primary" value="Login">
+	        </div>
+		</form>
+
+	</div>
+</div>
+{% endblock %}

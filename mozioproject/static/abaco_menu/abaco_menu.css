@@ -1,0 +1,23 @@
+/* plataforma (privado)*/
+
+#menuprivado{
+    /*background-color: #F0AD4E;*/
+    background-color: transparent;
+    background-color: #019D59;
+    background-image: url(/static/abaco_menu/img/fondo_menu.png);
+    width: 20%;/*20% del total del area de la plataforma sera para el menu*/
+    float:left;
+    overflow: auto;
+    height: 100%;
+    font-family: "erasdust", "Helvetica Neue", Helvetica, Arial, cursive;
+  	color: white;
+    /*opacity: 0.8;*/
+}
+.nivel{
+	color:#FEC503;
+
+	border-bottom: 2px solid;
+}
+.materia{
+	font-size: 1.25em;
+}

@@ -1,0 +1,52 @@
+{% extends "homepage.html" %}
+{% block show %}
+<div id="contenedor" class="container contenido">
+	<div style="font-size:50px">
+			<a href="/catalogos/departamentos/crear"  class="flaticon-add118" title="Nuevo"></a>
+
+			<a href="{% url "catalogos_departamentos_reporte" %}"  class="flaticon-print36" title="Imprimir" target="_blank"></a>
+	</div>
+	<h3><label class='label label-info'>{{request.session.message}}</label></h3>
+	<hr style="border:1px solid #ddd;"></hr>
+	<div class="panel panel-default" style="width:50%; margin:0 auto;border:2px solid green;">
+		<div class="panel-heading" style="border-bottom:1px solid green;text-aling:center;"><h4>{{titulo_listado}}</h4></div>
+		<div class="panel-body">
+			<table class="table  table-condensed" >
+				<thead style="border-bottom:2px solid #ddd;">
+					<th>Nombre de Departamento</th>
+					<th>Acciones</th>
+				</thead>
+				<tbody>
+					{% for departamento in departamentos %}
+						<tr style="border-bottom:1px solid #ddd;">
+							<td>{{ departamento.nombre }}</td>
+							<td style="font-size:20px">
+								<a href="{% url "catalogos_departamentos_eliminar" departamento.id %}"  class="flaticon-delete84" title="eliminar"></a>
+								<a href="{% url "catalogos_departamentos_editar" departamento.id %}"  class="flaticon-pencil41" title="editar"></a>
+							</td>
+						</tr>
+					{% endfor %}
+				</tbody>
+			</table>
+
+			<div style="width:100%">
+	    		<ul class="pager">  <!--clase de bootstrap para paginado-->
+	        		{% if departamentos.has_previous %}
+	            		<li class="previous"><a href="?page={{ departamentos.previous_page_number }}">&larr; Anterior</a></li>
+	        		{% endif %}
+
+		        	<span class="current">
+		            	Pagina {{ departamentos.number }} de {{ departamentos.paginator.num_pages }}
+		        	</span>
+
+		        	{% if departamentos.has_next %}
+		            	<li class="next"><a href="?page={{ departamentos.next_page_number }}">Siguiente  &rarr;</a></li>
+		        	{% endif %}
+	    		</ul>
+			</div>
+
+		</div>
+
+	</div>
+</div>
+{%endblock%}

@@ -1,0 +1,71 @@
+
+<script type="text/javascript" src="/static/js/jquery.js"></script>
+<script type="text/javascript" src="/static/js/jquery.treegrid.js"></script>
+<link rel="stylesheet" href="/static/css/jquery.treegrid.css">
+<link rel="stylesheet" href="/static/abaco_menu/abaco_menu.css">
+
+	<!--<div id="contenedor" class="container">-->
+
+
+<h3>here some side menu</h3>
+		<!--<h3><label class='label label-info'>{{message}}</label></h3>
+		<h3><label class='label label-info'>{{nombre_usuario}} con usuario_id: {{usuario_id}} pertenece al grupo: {{nombre_grupo}}</label></h3>-->
+
+
+
+				<!-- <table class="tree">
+
+	                <tr class="treegrid-1 nivel h3">
+	                    <td>Secundaria</td>
+	                </tr>
+
+
+					{% for materia in materias_secundaria %}
+						{{counter2.increment}}
+		                <tr class="materia treegrid-{{counter2.count}} treegrid-parent-1" >
+		                    <td>{{materia.nombre}}</td>
+		                </tr>
+
+					{% endfor %}
+
+            	</table>
+
+
+
+				<table class="tree">
+	                <tr class="treegrid-1 nivel h3">
+	                    <td>Bachillerato</td>
+	                </tr>
+
+					{% for materia in materias_bachillerato %}
+						{{counter.increment}}
+		                <tr class="materia treegrid-{{counter.count}} treegrid-parent-1" >
+		                    <td>{{materia.nombre}}</td>
+		                </tr>
+		                {% if materia.nombre == "Algebra" %}
+		                	{{counter.increment}}
+							{% with mat=2 %}
+
+		                	{% for tema in temas_algebra %}
+								<tr class="treegrid-{{counter.count}} treegrid-parent-{{mat}}" >
+			                    	<td>{{tema.descripcion}}</td>
+			                	</tr>
+
+			                {% endfor %}
+			                {% endwith %}
+
+						{% endif %}
+
+					{% endfor %}
+
+            	</table> -->
+
+
+
+	<!--</div>-->
+
+	<script type="text/javascript">
+  		$('.tree').treegrid();
+	</script>
+
+

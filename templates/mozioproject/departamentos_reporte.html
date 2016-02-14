@@ -1,0 +1,30 @@
+{% extends "bootstrap_reporte.html" %}
+{% block titulo_reporte	%}
+	<div class="tituloreporte">{{titulo_reporte}}</div>
+{% endblock %}
+
+{% block contenido	%}
+
+
+		<table >
+
+			<thead>
+				<tr>
+					<th>Nombre Departamento</th>
+					<th>Orden</th>
+
+				</tr>
+			</thead>
+			<tbody>
+				{% for departamento in departamentos %}
+					<tr>
+						<td>{{departamento.nombre}}</td>
+						<td>{{departamento.orden}}</td>
+
+					</tr>
+				{% endfor %}
+
+			</tbody>
+		</table>
+
+{% endblock %}

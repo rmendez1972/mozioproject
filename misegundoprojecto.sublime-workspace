@@ -1,0 +1,507 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"c",
+				"contenido"
+			],
+			[
+				"if",
+				"if	if"
+			],
+			[
+				"get",
+				"get_object_or_404"
+			],
+			[
+				"render",
+				"render_to_response"
+			],
+			[
+				"djan",
+				"django_projects"
+			],
+			[
+				"r",
+				"rmendez1972"
+			],
+			[
+				"M",
+				"MiPrimeraClase"
+			],
+			[
+				"table",
+				"table-bordered"
+			],
+			[
+				"is",
+				"is_array"
+			],
+			[
+				"nombre",
+				"nombre_tipo_persona"
+			],
+			[
+				"requisitos",
+				"requisitos_tipo_persona"
+			],
+			[
+				"requisito_tr",
+				"requisito_tipo_persona"
+			],
+			[
+				"Requ",
+				"Requisito"
+			],
+			[
+				"descrip",
+				"descripcion_tipo_persona"
+			],
+			[
+				"Tipo",
+				"TipoPersona"
+			],
+			[
+				"descripcion",
+				"descripcion_tipo_persona"
+			],
+			[
+				"Ho",
+				"HomeController"
+			],
+			[
+				"V",
+				"View::make	Create a View with Data"
+			],
+			[
+				"Route",
+				"Route::getController	Route to Controller Action"
+			],
+			[
+				"Session",
+				"Session-put	Session-put"
+			],
+			[
+				"php-",
+				"php-getset	Create getter and setter methods"
+			],
+			[
+				"htms",
+				"htmlspecialchars"
+			],
+			[
+				"t",
+				"text	.text()"
+			],
+			[
+				"Input",
+				"Input-get	Input-get"
+			],
+			[
+				"In",
+				"Input::get	Retrieve an Input value"
+			],
+			[
+				"H",
+				"HomeController"
+			],
+			[
+				"ti",
+				"title	Tag"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "Packages/LESS-build/LESS.sublime-build",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"p",
+				"Package Control: Remove Package"
+			],
+			[
+				"Snippet:",
+				"Snippet: require …"
+			],
+			[
+				"Snippet: ",
+				"Snippet: Eloquent-create"
+			],
+			[
+				"pa",
+				"Package Control: Discover Packages"
+			],
+			[
+				"",
+				"Bookmarks: Clear All"
+			],
+			[
+				"sublimeL",
+				"Preferences: SublimeLinter Settings – User"
+			],
+			[
+				"clip",
+				"Clipboard History"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: Discover Packages"
+			],
+			[
+				"stac",
+				"Stackoverflow: Search from Input"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"remove pa",
+				"Package Control: Remove Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"snippet",
+				"Snippet: blade-for"
+			],
+			[
+				"file",
+				"File: Close All"
+			]
+		],
+		"width": 464.0
+	},
+	"console":
+	{
+		"height": 174.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/rmendez1972/Documents/django_projects/mesadeservicio/mesadeservicio/admin.py",
+		"/C/Users/rmendez1972/Documents/django_projects/mesadeservicio/mesadeservicio/models.py",
+		"/C/Users/rmendez1972/Documents/django_projects/mesadeservicio/misegundoprojecto/settings.py",
+		"/C/Users/rmendez1972/AppData/Roaming/Sublime Text 2/Packages/User/Pylinter.sublime-settings",
+		"/C/Users/rmendez1972/AppData/Roaming/Sublime Text 2/Packages/TrailingSpaces/trailing_spaces.sublime-settings",
+		"/C/Users/rmendez1972/AppData/Roaming/Sublime Text 2/Packages/SublimeREPL/SublimeREPL.sublime-settings",
+		"/C/Users/rmendez1972/AppData/Roaming/Sublime Text 2/Packages/Emmet/Emmet.sublime-settings",
+		"/C/Users/rmendez1972/AppData/Roaming/Sublime Text 2/Packages/Djaneiro/Settings/HTML (Django).sublime-settings",
+		"/C/Users/rmendez1972/AppData/Roaming/Sublime Text 2/Packages/User/HTML (Django).sublime-settings",
+		"/C/Users/rmendez1972/AppData/Roaming/Sublime Text 2/Packages/User/SublimeLinter.sublime-settings",
+		"/C/Users/rmendez1972/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/C/Users/rmendez1972/Documents/django_projects/miprimerproyecto/miprimerproyecto/views.py",
+		"/C/Users/rmendez1972/AppData/Roaming/Sublime Text 2/Packages/Pylinter/Pylinter.sublime-settings",
+		"/C/wamp2.5/apps/asesores_inmobiliarios/app/views/layouts/bootstrapcredencial.blade.php",
+		"/C/wamp2.5/apps/asesores_inmobiliarios/app/controllers/PerfilController.php",
+		"/C/wamp2.5/apps/asesores_inmobiliarios/app/views/HomeController/privado.blade.php",
+		"/C/wamp2.5/apps/asesores_inmobiliarios/app/views/HomeController/editar_usuarios.blade.php",
+		"/C/Users/rmendez1972/Documents/pythonProjects/cuaderno/artchivoaudio.py",
+		"/C/Users/rmendez1972/Documents/django_projects/miprimerproyecto/manage.py",
+		"/C/Users/rmendez1972/Documents/django_projects/miprimerproyecto/basedatos.sqlite",
+		"/C/Users/rmendez1972/Documents/django_projects/miprimerproyecto/db.sqlite3",
+		"/C/Python34/proyectos/cuaderno/cuaderno.py",
+		"/C/Python34/proyectos/cuaderno/contacto.py",
+		"/C/Python34/proyectos/cuaderno/menu.py",
+		"/C/wamp2.5/apps/asesores_inmobiliarios/app/controllers/ReportesController.php",
+		"/C/wamp2.5/apps/asesores_inmobiliarios/app/routes.php",
+		"/C/wamp2.5/apps/asesores_inmobiliarios/vendor/thujohn/pdf/src/Thujohn/Pdf/dompdf/dompdf_config.inc.php",
+		"/C/wamp2.5/apps/asesores_inmobiliarios/vendor/thujohn/pdf/src/Thujohn/Pdf/dompdf/dompdf_config.custom.inc.php",
+		"/C/wamp2.5/apps/asesores_inmobiliarios/vendor/thujohn/pdf/src/Thujohn/Pdf/dompdf/include/cpdf_adapter.cls.php",
+		"/C/wamp2.5/apps/asesores_inmobiliarios/vendor/thujohn/pdf/src/config/config.php",
+		"/C/wamp2.5/apps/asesores_inmobiliarios/vendor/thujohn/pdf/src/Thujohn/Pdf/dompdf/load_font.php",
+		"/C/wamp2.5/apps/asesores_inmobiliarios/vendor/autoload.php",
+		"/C/wamp2.5/apps/asesores_inmobiliarios/app/models/Asesor.php",
+		"/C/wamp2.5/apps/asesores_inmobiliarios/app/controllers/AsesoresController.php",
+		"/C/wamp2.5/apps/asesores_inmobiliarios/app/views/asesores/lista_cursosasesor.blade.php",
+		"/C/wamp2.5/apps/asesores_inmobiliarios/app/views/ReportesController/lista_cursosasesor.blade.php",
+		"/C/wamp2.5/apps/asesores_inmobiliarios/app/views/ReportesController/lista_requisitosasesor.blade.php",
+		"/C/wamp2.5/apps/asesores_inmobiliarios/app/views/asesores/lista.blade.php",
+		"/C/wamp2.5/apps/asesores_inmobiliarios/app/models/TipoPersona.php",
+		"/C/wamp2.5/apps/asesores_inmobiliarios/public/assets/css/component.css",
+		"/C/wamp2.5/apps/asesores_inmobiliarios/app/controllers/TipopersonaController.php",
+		"/C/wamp2.5/apps/asesores_inmobiliarios/app/views/asesores/nuevocurso_asesor.blade.php",
+		"/C/wamp2.5/apps/asesores_inmobiliarios/app/views/Tipo_persona/nuevorequisito_tipo_persona.blade.php",
+		"/C/wamp2.5/apps/asesores_inmobiliarios/app/views/asesores/eliminar_curso.blade.php",
+		"/C/Python34/proyectos/cuaderno/opciones_comando.py",
+		"/C/Users/rmendez1972/AppData/Roaming/Sublime Text 2/Packages/User/SublimeREPL.sublime-settings",
+		"/C/wamp2.5/apps/asesores_inmobiliarios/app/views/Cursos/editar_curso.blade.php",
+		"/C/wamp2.5/apps/asesores_inmobiliarios/app/views/requisitos/lista_requisitos.blade.php",
+		"/C/wamp2.5/apps/asesores_inmobiliarios/app/controllers/RequisitosController.php",
+		"/C/wamp2.5/apps/asesores_inmobiliarios/app/views/ReportesController/lista_requisitos.blade.php",
+		"/C/wamp2.5/apps/asesores_inmobiliarios/app/views/ReportesController/asesores_municipio.blade.php",
+		"/C/wamp2.5/apps/asesores_inmobiliarios/app/views/asesores/editar.blade.php",
+		"/C/wamp2.5/apps/asesores_inmobiliarios/app/views/ReportesController/lista_requisitostipopersona.blade.php",
+		"/C/wamp2.5/apps/asesores_inmobiliarios/app/views/layouts/bootstrapreportes.blade.php",
+		"/C/wamp2.5/apps/asesores_inmobiliarios/app/views/layouts/bootstrap.blade.php",
+		"/C/wamp2.5/apps/asesores_inmobiliarios/app/controllers/HomeController.php",
+		"/C/wamp2.5/apps/asesores_inmobiliarios/app/views/ReportesController/lista_asesores.blade.php",
+		"/C/wamp2.5/apps/asesores_inmobiliarios/app/views/Cursos/lista_curso.blade.php",
+		"/C/wamp2.5/apps/asesores_inmobiliarios/app/controllers/CursoController.php",
+		"/C/wamp2.5/apps/asesores_inmobiliarios/app/views/HomeController/register.blade.php",
+		"/C/wamp2.5/apps/asesores_inmobiliarios/app/views/HomeController/contacto.blade.php",
+		"/C/wamp2.5/apps/asesores_inmobiliarios/app/models/Curso.php",
+		"/C/wamp2.5/apps/asesores_inmobiliarios/app/views/Cursos/nuevo_curso.blade.php",
+		"/C/wamp2.5/apps/asesores_inmobiliarios/app/views/Cursos/eliminar_curso.blade.php",
+		"/C/wamp2.5/apps/asesores_inmobiliarios/app/views/ReportesController/lista_cursos.blade.php",
+		"/C/wamp2.5/apps/asesores_inmobiliarios/app/views/ReportesController/prueba_emmet.html",
+		"/C/wamp2.5/apps/asesores_inmobiliarios/app/views/municipios/crear.blade.php",
+		"/C/wamp2.5/apps/asesores_inmobiliarios/app/views/requisitos/crear_requisito.blade.php",
+		"/C/wamp2.5/apps/asesores_inmobiliarios/app/views/asesores/nuevo.blade.php",
+		"/C/wamp2.5/apps/asesores_inmobiliarios/app/views/layouts/bootstrapreportes.blade.php.r67",
+		"/C/wamp2.5/apps/asesores_inmobiliarios/app/views/layouts/bootstrapreportes.blade.php.mine",
+		"/C/wamp2.5/apps/asesores_inmobiliarios/public/assets/css/bootstrap.min.css",
+		"/C/wamp2.5/apps/asesores_inmobiliarios/app/models/Requisito.php",
+		"/C/wamp2.5/apps/asesores_inmobiliarios/app/views/Tipo_persona/eliminar_requisitotipopersona.blade.php",
+		"/C/wamp2.5/apps/asesores_inmobiliarios/app/views/Tipo_persona/lista_tipo_persona.blade.php",
+		"/C/wamp2.5/apps/asesores_inmobiliarios/app/views/municipios/lista.blade.php",
+		"/C/wamp2.5/apps/asesores_inmobiliarios/app/views/ReportesController/lista_asesores_municipio.blade.php",
+		"/C/wamp2.5/apps/asesores_inmobiliarios/app/views/ReportesController/lista_asesores_tipopersona.blade.php",
+		"/C/wamp2.5/apps/asesores_inmobiliarios/app/views/requisitos/editar_requisito.blade.php",
+		"/C/wamp2.5/apps/asesores_inmobiliarios/app/views/requisitos/eliminar_requisito.blade.php",
+		"/C/wamp2.5/apps/asesores_inmobiliarios/app/controllers/TipopersonarequisitosController.php",
+		"/C/wamp2.5/apps/asesores_inmobiliarios/app/views/Tipopersona_requisitos/lista_tipopersona_requisitos.blade.php",
+		"/C/wamp2.5/apps/asesores_inmobiliarios/app/views/Tipo_persona/nuevo_tipo_persona.blade.php",
+		"/C/wamp2.5/apps/asesores_inmobiliarios/app/views/ReportesController/asesores_tipopersona.blade.php",
+		"/C/wamp2.5/apps/asesores_inmobiliarios/app/views/HomeController/lista_usuarios.blade.php",
+		"/C/wamp2.5/apps/asesores_inmobiliarios/app/views/municipios/lista.blade.php.r52",
+		"/C/wamp2.5/apps/asesores_inmobiliarios/app/models/Municipio.php",
+		"/C/wamp2.5/apps/asesores_inmobiliarios/app/views/ReportesController/lista_tipopersona.blade.php",
+		"/C/wamp2.5/apps/asesores_inmobiliarios/app/views/ReportesController/lista_usuarios.blade.php",
+		"/C/wamp2.5/apps/asesores_inmobiliarios/app/views/ReportesController/lista_municipios.blade.php",
+		"/C/wamp2.5/apps/asesores_inmobiliarios/app/controllers/MunicipiosController.php",
+		"/C/wamp2.5/apps/asesores_inmobiliarios/app/views/layouts/bootstrapreportes.blade.php.r43",
+		"/C/wamp2.5/apps/asesores_inmobiliarios/app/views/layouts/bootstrapreportes.blade.php.r46",
+		"/C/wamp2.5/apps/asesores_inmobiliarios/app/views/layouts/bootstrapreportes.blade.php.r41",
+		"/C/wamp2.5/apps/asesores_inmobiliarios/app/views/Tipo_persona/eliminar_tipopersona.blade.php",
+		"/C/wamp2.5/apps/asesores_inmobiliarios/app/views/Tipo_persona/editar_tipopersona.blade.php",
+		"/C/wamp2.5/apps/asesores_inmobiliarios/app/views/PerfilController/editar_usuarios.blade.php",
+		"/C/wamp2.5/apps/asesores_inmobiliarios/app/views/municipios/eliminar_municipios.blade.php",
+		"/C/wamp2.5/apps/asesores_inmobiliarios/app/views/HomeController/lista_usuarios.blade.php.mine",
+		"/C/wamp2.5/apps/asesores_inmobiliarios/app/views/HomeController/lista_usuarios.blade.php.r31",
+		"/C/wamp2.5/apps/asesores_inmobiliarios/app/views/HomeController/login.blade.php",
+		"/C/wamp2.5/apps/asesores_inmobiliarios/app/config/database.php",
+		"/C/wamp2.5/apps/asesores_inmobiliarios/app/views/HomeController/eliminar_usuarios.blade.php",
+		"/C/wamp2.5/apps/asesores_inmobiliarios/app/views/HomeController/index.blade.php",
+		"/C/wamp2.5/apps/asesores_inmobiliarios/app/filters.php",
+		"/C/wamp2.5/apps/asesores_inmobiliarios/app/views/ReportesController/hello.blade.php",
+		"/C/wamp2.5/apps/asesores_inmobiliarios/app/views/layouts/master.blade.php",
+		"/C/wamp2.5/apps/asesores_inmobiliarios/app/views/ReportesController/hello.php",
+		"/C/wamp2.5/apps/asesores_inmobiliarios/composer.json",
+		"/C/wamp2.5/apps/asesores_inmobiliarios/app/config/app.php",
+		"/C/wamp2.5/apps/asesores_inmobiliarios/app/models/Usuario.php",
+		"/C/Users/rmendez1972/AppData/Roaming/Sublime Text 2/Packages/SublimeLinter/SublimeLinter.sublime-settings",
+		"/C/Users/rmendez1972/AppData/Roaming/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
+		"/C/Users/rmendez1972/AppData/Roaming/Sublime Text 2/Packages/BracketHighlighter/bh_core.sublime-settings",
+		"/C/Users/rmendez1972/AppData/Roaming/Sublime Text 2/Packages/LESS-build/LESS.sublime-build",
+		"/C/wamp2.5/apps/asesores_inmobiliarios/asesores_inmobiliarios.sublime-project",
+		"/C/wamp2.5/apps/asesores_inmobiliarios/public/assets/js/ejemplo.less",
+		"/C/wamp2.5/apps/asesores_inmobiliarios/public/assets/js/ejemplo.css",
+		"/C/Users/rmendez1972/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/C/wamp2.5/apps/asesores_inmobiliarios/public/assets/js/prueba.css",
+		"/C/Users/rmendez1972/AppData/Roaming/Sublime Text 2/Packages/Autoprefixer/Autoprefixer.sublime-settings",
+		"/C/Users/rmendez1972/AppData/Roaming/Sublime Text 2/Packages/User/Autoprefixer.sublime-settings",
+		"/C/wamp2.5/apps/asesores_inmobiliarios/public/assets/css/bootstrap.css",
+		"/C/wamp2.5/apps/asesores_inmobiliarios/public/assets/js/bootstrap.js",
+		"/C/wamp2.5/apps/asesores_inmobiliarios/app/views/error/error404.blade.php",
+		"/C/wamp2.5/apps/asesores_inmobiliarios/app/controllers/BaseController.php",
+		"/C/Users/rmendez1972/AppData/Roaming/Sublime Text 2/Packages/User/Distraction Free.sublime-settings",
+		"/C/Users/rmendez1972/AppData/Roaming/Sublime Text 2/Packages/User/JSON.sublime-settings"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"login",
+			"TIME ZONE",
+			"java",
+			"menu",
+			"nav",
+			"nav-bar",
+			"nav",
+			"container",
+			"mine",
+			"orderBy",
+			"img",
+			"font",
+			"content",
+			"font",
+			"list",
+			"html",
+			"where",
+			"condensed",
+			"border: 2",
+			"with",
+			"width",
+			"$mensage",
+			"$message",
+			"round icon",
+			"class",
+			"<div",
+			"	<",
+			"<h1>",
+			"nombre",
+			"subject",
+			"name",
+			"nombre",
+			"name",
+			"maxclients",
+			"max",
+			"field",
+			"fields",
+			"Limit",
+			"LimitRequest",
+			"mod_rewrite",
+			"ErrorDocument",
+			"alias",
+			"Directory",
+			"secret",
+			"provider",
+			"users",
+			"movies",
+			"schema",
+			"show",
+			"ng-show",
+			"mail",
+			"pageClass",
+			"import",
+			"');\n",
+			"@import url"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 38.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 142.0
+	},
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"curso",
+				"app/views/Cursos/editar_curso.blade.php"
+			],
+			[
+				"error",
+				"app/views/error/error404.blade.php"
+			],
+			[
+				"base",
+				"app/controllers/BaseController.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 362.0,
+	"status_bar_visible": true
+}

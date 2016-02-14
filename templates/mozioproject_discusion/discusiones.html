@@ -1,0 +1,37 @@
+<link rel="stylesheet" href="/static/abaco_videos/css/normalize.css">
+<link rel="stylesheet" href="/static/abaco_discusion/css/discusion.css">
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="/static/abaco_videos/js/prefixfree.min.js"></script>
+<script src="/static/abaco_discusion/js/discusion.js"></script>
+<article id="preguntas">
+
+	<div id="crear-pregunta">
+		{% csrf_token %}
+		<h3>Dear Shuttle Provider can you fill the form<pan class="abacoicons-interrogacion"></span></h3>
+		<input type="text" id="pregunta" placeholder="type your provider name here..">
+		<input type="email" id="correo" placeholder="type your email here..">
+		<input type="text" id="tel" placeholder="type your phone here..">
+		<input type="text" id="leng" placeholder="type your language here..">
+		<input type="text" id="currency" placeholder="type your currency here..">
+		<button><span class="abacoicons-palomita"></span>Save</button>
+	</div>
+
+	<ul>
+		{% for pregunta in preguntas %}
+		<li>
+			<a data-id="{{ pregunta.id }}" title="click to edit data"> {{ pregunta.name }}</a>
+			{% if  pregunta.nada == "nada" %}
+					<span class="abacoicons-tarea"></span>
+			{% endif %}
+			<br>
+			<p class="small"><strong class="text-success">Email:</strong> {{ pregunta.email }}</p>
+			<p class="small"><strong class="text-success">Phone: </strong>{{ pregunta.phone }}</strong></p>
+			<p class="small"><strong class="text-success">Language:</strong>{{ pregunta.language }}</p>
+			<p class="small"><strong class="text-success">Currency:</strong>{{ pregunta.currency }}</p>
+			<p class="small"><strong class="text-success">Data supplied by: <strong class="text-success">{{pregunta.user.username|upper}}</strong><br>Date: <strong class="text-success">{{pregunta.fecha|date:'d-m-Y'}}</strong></p>
+		</li>
+		{% endfor %}
+	</ul>
+</article>
+<article id="respuestas"></article>

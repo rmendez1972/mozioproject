@@ -1,0 +1,205 @@
+{% extends "bootstrap_privado.html" %}
+{% load menu_plataforma_tags %}
+{% load providers_videos_tags %}
+
+{% block menuprivado %}
+	{# llamo al método mostrar_mmenu del inclusion tag menu_plataforma_tags que muestra el menu (abaco/menu_plataforma.html) #}
+	{% mostrar_menu %}
+{% endblock %}
+
+
+{% block discusiones %}
+	{# llamo al método mostrar_mmenu del inclusion tag menu_plataforma_tags que muestra el menu (abaco/menu_plataforma.html) #}
+	{% mostrar_discusiones %}
+{% endblock %}
+
+
+{% block contenido %}
+
+
+	<link rel="stylesheet" href="/static/abaco_videos/css/normalize.css">
+	<link rel="stylesheet" href="/static/abaco_videos/css/videos.css">
+
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="/static/abaco_videos/js/prefixfree.min.js"></script>
+	<script src="/static/abaco_videos/js/main.js"></script>
+
+
+	<div id="wrapper">
+		<div id="libro">
+			<article id="videos"> <div id="headervideos">
+				<h2 class="text-info"><span class="abacoicons-camaraweb"></span> Shuttle Provider´s Videos</h2>
+				{% if  request.session.nombre_grupo == "asesor" %}
+					<button id="agregar"><span class="abacoicons-accion"></span>Add Video</button>
+				{% endif %}</div>
+				<ul>
+					{% for video in videos %}
+					<li>
+						<h3>{{video.descripcion_corta}}</h3>
+						<table class="table">
+							<thead>
+								<th>Playtime</th>
+								<th>Profit</th>
+							</thead>
+							<tr style="text-align:left">
+								<td width="70%"><span  class="abacoicons-reloj" style="font-size:1.5em;"></span><small class="text-muted">{{video.duracion_aprox|time:"i:s"}} min.</small></td>
+								<td width="30%">
+									<figure>
+										<img  src="/static/abaco_videos/img/niveles_dificultad/{{ video.nivel_dificultad_id }}.png">
+										<small class="text-muted">{{video.nivel_dificultad.descripcion}}</small>
+									</figure>
+								</td>
+							</tr>
+						</table>
+						<a data-id="{{ video.id }}">
+							<figure>
+								<img class="videos" src="/static/abaco_videos/img/thumbs/{{ video.thumb }}">
+								<figcaption>{{ video.descripcion_larga }}</figcaption>
+							</figure>
+						</a>
+						<div class="tools">
+							<a title="editar video" onclick="editar_video({{video.id}});"><span class="abacoicons-lapiz"></span></a>
+							<a  title='eliminar video' onClick='eliminar_video({{video.id}})'><span class='abacoicons-mal'></span></a>
+						</div>
+					</li>
+					{% endfor %}
+				</ul>
+			</article>
+
+			<article id="contenido-clase"></article>
+
+			<article id="contenido">
+				<a class="regresar">Back</a>
+				<div class="panel panel-default" style="width:90%; margin:50px auto;border:1px solid blue;">
+
+					<div class="panel-heading" style="border-bottom:1px solid green;text-aling:center;"><h4><span class="abacoicons-camaraweb"></span>New Video</h4></div>
+
+						<div class="panel-body">
+
+								{% csrf_token %}
+
+								<div class="form-group">
+									<label for="descripcion_corta" class="control-label">Short description:</label>
+									<input type="text" id="descripcion_corta" placeholder="type here..." required />
+
+			            		</div>
+			            		<div class="form-group">
+									<label for="descripcion_larga" class="control-label">Long description:</label>
+									<input type="text" id="descripcion_larga" placeholder="type here..." required />
+
+			            		</div>
+			            		<div class="form-group">
+									<label for="url" class="control-label">Youtube url:</label>
+									<input type="text" id="url" placeholder="type here..." required />
+
+			            		</div>
+			            		<div class="form-group">
+									<label for="nivel_dificultad" class="control-label">Interest:</label>
+									<select name="nivel_dificultad" id="nivel_dificultad" class="control-label">
+										<option value="0" selected>Select a option</option>
+									 	<option value="1">Low</option>
+									 	<option value="2">Medium</option>
+									 	<option value="3">High</option>
+									</select>
+
+			            		</div>
+			            		<div class="form-group">
+									<label for="thumb" class="control-label">Thumb:</label>
+									<select name="thumb" id="thumb" class="control-label">
+										<option value="0" selected>Select an option</option>
+									 	<option value="algebra.jpg">Theme 1</option>
+									 	<option value="trigonometria.jpg">Theme 2</option>
+									 	<option value="geometria_analitica.jpg">Theme 3</option>
+									</select>
+
+			            		</div>
+			            		<div class="form-group">
+									<label for="aprox" class="control-label">Playtime:</label>
+									<input type="time" class="form-control"  id="aprox" required />
+
+			            		</div>
+								<br>
+								<div class="form-group">
+						           	<div class="col-sm-6">
+										<button id="grabar_video">Save Video</button>
+
+									</div>
+								</div>
+
+
+						</div>
+				</div>
+
+			</article>
+
+			<article id="video_editar">
+				<a class="regresar">Back</a>
+				<div class="panel panel-default" style="width:90%; margin:50px auto;border:1px solid blue;">
+
+					<div class="panel-heading" style="border-bottom:1px solid green;text-aling:center;"><h4><span class="abacoicons-camaraweb"></span>Edit Video</h4></div>
+
+						<div class="panel-body">
+
+								{% csrf_token %}
+
+								<div class="form-group">
+									<label for="descrip_corta" class="control-label">Short Description:</label>
+									<input type="text" class="form-control" maxlength="250" id="descrip_corta" placeholder="type here" />
+									<input type="hidden" class="form-control"  id="video_id"  />
+
+			            		</div>
+			            		<div class="form-group">
+									<label for="descrip_larga" class="control-label">Long description:</label>
+									<textarea class="form-control" rows="7" maxlength="800" id="descrip_larga"></textarea>
+
+			            		</div>
+			            		<div class="form-group">
+									<label for="url_corta" class="control-label">Youtube url:</label>
+									<input type="text" maxlength="50" id="url_corta" placeholder="type here" />
+
+			            		</div>
+			            		<div class="form-group">
+									<label for="dificultad" class="control-label">Interest:</label>
+									<select name="dificultad" id="dificultad" class="control-label">
+									 	<option value="1">Low</option>
+									 	<option value="2">Medium</option>
+									 	<option value="3">High</option>
+									</select>
+
+			            		</div>
+			            		<div class="form-group">
+									<label for="thumb_img" class="control-label">Thumb:</label>
+									<select name="thumb" id="thumb_img" class="control-label">
+
+									 	<option value="algebra.jpg">Algebra</option>
+									 	<option value="trigonometria.jpg">Trigonometría</option>
+									 	<option value="geometria_analitica.jpg">geometría analítica</option>
+									</select>
+
+			            		</div>
+			            		<div class="form-group">
+									<label for="duracion" class="control-label">Playtime.:</label>
+									<input type="time" class="form-control"  id="duracion" />
+
+			            		</div>
+								<br>
+								<div class="form-group">
+						           	<div class="col-sm-6">
+										<button id="actualizar_video">Update</button>
+
+									</div>
+								</div>
+
+
+						</div>
+				</div>
+
+			</article>
+
+		</div>
+		<div id="side">	</div>
+	</div>
+
+
+{% endblock %}

@@ -1,0 +1,29 @@
+{% extends "homepage.html" %}
+{% block show %}
+<div id="contenedor" class="container contenido">
+
+
+	<div class="panel panel-default" style="width:50%; margin:0 auto;border:2px solid green;">
+		<div class="panel-heading" style="border-bottom:1px solid green;text-aling:center;"><h4>{{titulo_formulario}} {{departamento.nombre}}</h4></div>
+		<div class="panel-body">
+			<form action="{% url "catalogos_departamentos_eliminar" departamento.id %}" method="POST" rol="form">
+			{% csrf_token %}
+			{{ form.non_field_errors }}
+			<div class="form-group">
+				<label class="control-label">¿Estás seguro de que quieres eliminar al Departamento?</label>
+				<input type="hidden" value="{{departamento.id}}" />
+
+            </div>
+			<br>
+			<div class="form-group">
+            	<div class="col-sm-6">
+					<input type="submit" class="btn btn-danger" value="Eliminar">
+					<a href="{% url 'catalogos_departamentos_listar' %}"><button class="btn btn-default" type="button">Cancelar</button> </a>
+				</div>
+			</div>
+		</form>
+
+		</div>
+	</div>
+</div>
+{%endblock%}
