@@ -1,2 +1,3 @@
 # mozioproject
 coding test
+This is the principal feature. I made REST endpoint for this. Through front-end features like lists and forms collect data such as name, email, phone, language and currency. The endpoints are reached at this time via AJAX requests with Json responses, but may be too full REST API to be consumed by any front-end app like a movil app. The app has login and CSRF validation. The user and password are user: rmendez1972 and password: veronica1972. After login Click on "shuttle providers" menu option to go to the bottom and use this feature. I use mysql like database, i made a mozio.sql file backup for you and put the file in the database directory to made a restore of the db. I use user:root and password:admin like mysql administrator.
